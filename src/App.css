@@ -1,3 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: #f0f2f5;
+  padding: 20px;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #1a1a2e;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.posts-container h2 {
+  font-size: 20px;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+}
+
+.post-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.post-card h3 {
+  color: #1a1a2e;
+  margin-bottom: 8px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.post-card p {
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* Add these to existing CSS */
+
+.create-form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 2px dashed #4a90d9;
+}
+
+.create-form h2 {
+  font-size: 18px;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+}
+
+.create-form input,
+.create-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.create-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.create-form button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.create-form button:hover {
+  background: #218838;
+}
+
 /* Add to existing CSS */
 
 .edit-form {
@@ -83,4 +199,38 @@
 
 .post-actions .edit-btn:hover {
   background: #e0a800;
+}
+
+/* Add to existing CSS */
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4a90d9;
 }
