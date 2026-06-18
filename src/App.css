@@ -1,21 +1,21 @@
-/* Add these to existing CSS */
+/* Add to existing CSS */
 
-.create-form {
-  background: #f8f9fa;
+.edit-form {
+  background: #fff3cd;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 25px;
-  border: 2px dashed #4a90d9;
+  border: 2px solid #ffc107;
 }
 
-.create-form h2 {
+.edit-form h2 {
   font-size: 18px;
-  color: #1a1a2e;
+  color: #856404;
   margin-bottom: 15px;
 }
 
-.create-form input,
-.create-form textarea {
+.edit-form input,
+.edit-form textarea {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid #ddd;
@@ -25,23 +25,62 @@
   font-family: inherit;
 }
 
-.create-form textarea {
+.edit-form textarea {
   min-height: 80px;
   resize: vertical;
 }
 
-.create-form button {
+.edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-actions button[type="submit"] {
+  background: #ffc107;
+  color: #212529;
   padding: 10px 20px;
-  background: #28a745;
-  color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
-  transition: background 0.3s;
-  width: 100%;
+  flex: 1;
 }
 
-.create-form button:hover {
-  background: #218838;
+.edit-actions button[type="submit"]:hover {
+  background: #e0a800;
+}
+
+.edit-actions button[type="button"] {
+  background: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  flex: 1;
+}
+
+.edit-actions button[type="button"]:hover {
+  background: #5a6268;
+}
+
+.post-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.post-actions .edit-btn {
+  background: #ffc107;
+  color: #212529;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.post-actions .edit-btn:hover {
+  background: #e0a800;
 }
